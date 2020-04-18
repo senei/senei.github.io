@@ -1,0 +1,4 @@
+*.yaml
+*.lock
+node_modules
+.DS_STORE
