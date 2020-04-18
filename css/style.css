@@ -1,0 +1,18 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Portico-StencilRough";
+
+  src: url("./fonts/PorticoStencilRough.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/PorticoStencilRough.woff2") format("woff2"), /* Modern Browsers */
+    url("./fonts/PorticoStencilRough.woff") format("woff"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+p , svg text.main, svg text.sub {
+    font-family: 'Portico-StencilRough';
+    font-size: 64px;
+}
+svg text.sub {
+    font-size: 48px;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "senei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "snowpack --clean",
+    "start": "serve ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "snowpack": {
+    "webDependencies": [
+      "tailwindcss/dist/*.css",
+      "tailwindcss/dist/*.css.map"
+    ]
+  },
+  "dependencies": {
+    "http-vue-loader": "^1.4.2",
+    "tailwindcss": "^1.2.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "serve": "^11.3.0",
+    "snowpack": "^1.6.0"
+  },
+  "webD":[
+    "vue/dist/vue.esm.browser.js",
+    "http-vue-loader/src/httpVueLoader.js"
+  ]
+}
