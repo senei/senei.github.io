@@ -1,6 +1,6 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "Portico-StencilRough";
+  font-family: "StencilRough";
 
   src: url("./fonts/PorticoStencilRough.ttf") format("truetype"), /* Safari, Android, iOS */
     url("./fonts/PorticoStencilRough.woff2") format("woff2"), /* Modern Browsers */
@@ -10,7 +10,7 @@
 }
 
 p , svg text.main, svg text.sub {
-    font-family: 'Portico-StencilRough';
+    font-family: 'StencilRough';
     font-size: 64px;
 }
 svg text.sub {
