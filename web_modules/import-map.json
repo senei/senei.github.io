@@ -1,3 +1,5 @@
 {
-  "imports": {}
+  "imports": {
+    "fontfaceobserver/fontfaceobserver.js": "./fontfaceobserver/fontfaceobserver.js"
+  }
 }

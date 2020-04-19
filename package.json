@@ -13,19 +13,20 @@
   "snowpack": {
     "webDependencies": [
       "tailwindcss/dist/*.css",
-      "tailwindcss/dist/*.css.map"
+      "tailwindcss/dist/*.css.map",
+      "fontfaceobserver/fontfaceobserver.js"
     ]
   },
   "dependencies": {
-    "http-vue-loader": "^1.4.2",
-    "tailwindcss": "^1.2.0",
-    "vue": "^2.6.11"
+    "fontfaceobserver": "^2.1.0",
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
+    "@types/fontfaceobserver": "0.0.6",
     "serve": "^11.3.0",
     "snowpack": "^1.6.0"
   },
-  "webD":[
+  "webD": [
     "vue/dist/vue.esm.browser.js",
     "http-vue-loader/src/httpVueLoader.js"
   ]
