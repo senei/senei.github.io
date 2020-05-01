@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "StencilRough";
+    src: url("./fonts/PorticoStencilRough.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("./fonts/PorticoStencilRough.woff2")
+        format("woff2"),
+      /* Modern Browsers */ url("./fonts/PorticoStencilRough.woff")
+        format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  .logo {
+    max-width: 640px;
+    min-height: 360px;
+    background: transparent
+      url("https://images.unsplash.com/photo-1560995764-ca3f5418e131?ixlib=rb-1.2.1&auto=format&fit=crop&w=1378&q=80")
+      no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    justify-items: center;
+    align-content: center;
+  }
+
+.name[data-v-a69668ba]{padding:98px 0;margin:10px;font-family:StencilRough;font-size:6rem;mix-blend-mode:lighten;color:#000;background:hsla(0,0%,100%,.95)}
