@@ -1,17 +1,42 @@
-<link rel="stylesheet" href="/style.css">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, noarchive" />
 <title>senei web`s - variation on web development</title>
 
-<link
-  href="/web_modules/tailwindcss/tailwind.min.css"
-  rel="stylesheet"
-/>
+<link href="/web_modules/tailwindcss/tailwind.min.css" rel="stylesheet" />
+<style> 
+  @font-face{ font-family:"StencilRough"; src: url("/fonts/PorticoStencilRough.ttf") format("truetype"), url("/fonts/PorticoStencilRough.woff2") format("woff2"), url("/fonts/PorticoStencilRough.woff") format("woff"); font-weight:bold; font-style:normal;} 
+  @keyframes zommInOut { from { background-size: 100% auto; } to { background-size: 140% auto; } }
+  .logo{ 
+    max-width:640px; 
+    min-height:360px; 
+    /**/
+    background-image: url("//source.unsplash.com/collection/3323575/640x465");
+    background-repeat: no-repeat;  
+    background-position: center center;
+    background-size:  100% auto; 
+    /**/
+    display:flex;  
+    justify-content: center;
+    align-items: stretch;
+    /**/
+    animation: 3s zommInOut forwards ;
+    animation-delay: 1s;
+  }
+
+  @media (max-width: 360px) {
+    .logo {min-height: 270px; background-size:cover!important; }
+  }
+  .logo .name {color: transparent;}
+  .has-stencil .name {color: black;}
+  
+  /**/
+  /* #senei small { position: absolute; bottom:0; right:0; } */
+</style>
+<link rel="stylesheet" href="/style.css">
+
 <main id="senei" ></main>
 
 <script src="/web_modules/fontfaceobserver/fontfaceobserver.standalone.js"></script>
 <script type="module" src="/web_modules/vue/vue.runtime.esm-browser.prod.js"></script>
-<script type="module" src="/web_modules/vue/vue-router.esm.js"></script>
-
 <script type="module" src="/index.js"></script>
