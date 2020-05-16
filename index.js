@@ -1,4 +1,4 @@
-import{defineComponent as e,reactive as t,computed as n,inject as r,h as o,provide as a,ref as s,shallowRef as i,unref as c,nextTick as l,withScopeId as u,pushScopeId as f,createVNode as h,popScopeId as p,resolveComponent as d,openBlock as m,createBlock as g,Fragment as v,createApp as y}from"https://unpkg.com/vue@3.0.0-beta.9/dist/vue.esm-browser.prod.js";
+import{defineComponent as e,reactive as t,computed as n,inject as r,h as o,provide as a,ref as s,shallowRef as i,unref as c,nextTick as l,withScopeId as u,pushScopeId as f,createVNode as h,popScopeId as p,resolveComponent as d,openBlock as m,createBlock as g,Fragment as v,createApp as y}from"/web_modules/vue/vue.runtime.esm-browser.prod.js";
 /*!
   * vue-router v4.0.0-alpha.9
   * (c) 2020 Eduardo San Martin Morote
