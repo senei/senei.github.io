@@ -1,35 +1,52 @@
 <link href="/assets/tailwind.min.css" rel="stylesheet" />
 <style>
+	@font-face {
+		font-family: "StencilRough";
+		src: url("/assets/fonts/PorticoStencilRough.ttf") format("truetype"),
+			url("/assets/fonts/PorticoStencilRough.woff2") format("woff2"),
+			url("/assets/fonts/PorticoStencilRough.woff") format("woff");
+		font-weight: bold;
+		font-style: normal;
+	}
+	@keyframes zommInOut {
+		from {
+			background-size: 100% auto;
+		}
+		to {
+			background-size: 140% auto;
+		}
+	}
+	.logo {
+		max-width: 640px;
+		min-height: 360px;
+		/**/
+		background-image: url("/assets/img/pawel-czerwinski-KWpm9MmEo2s-unsplash.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% auto;
+		/**/
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		/**/
+		animation: 3s zommInOut forwards;
+		animation-delay: 0s;
+	}
 
-  @font-face{ font-family:"StencilRough"; src:url("/assets/fonts/PorticoStencilRough.ttf") format("truetype"), url("/assets/fonts/PorticoStencilRough.woff2") format("woff2"), url("/assets/fonts/PorticoStencilRough.woff") format("woff"); font-weight:bold; font-style:normal;} 
-  @keyframes zommInOut { from { background-size:  100% auto; } to { background-size: 140% auto; } }
-  .logo{ 
-    max-width:640px; 
-    min-height:360px; 
-    /**/
-    background-image: url("/assets/img/pawel-czerwinski-KWpm9MmEo2s-unsplash.jpg");
-    background-repeat: no-repeat;  
-    background-position: center center;
-    background-size:  100% auto; 
-    /**/
-    display:flex;  
-    justify-content: center;
-    align-items: stretch;
-    /**/
-    animation: 3s zommInOut forwards ;
-    animation-delay: 0s;
-  }
-
-  @media (max-width: 360px) {
-    .logo {min-height: 270px; background-size:cover!important; }
-  }
-  /* .logo .name {color: transparent;} */
-  /* .has-stencil .name {color: black;} */
+	@media (max-width: 360px) {
+		.logo {
+			min-height: 270px;
+			background-size: cover !important;
+		}
+	}
+	/* .logo .name {color: transparent;} */
+	/* .has-stencil .name {color: black;} */
 </style>
 <main id="senei" class="logo m-4 mx-auto"></main>
 <script type="module">
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#senei')
+	import { createApp } from "vue";
+	import App from "./App.vue";
+  import router from "./router/router.js";
+  window.r = router;
+  const app = createApp(App).use(router).mount("#senei")
 </script>

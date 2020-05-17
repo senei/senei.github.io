@@ -15,20 +15,29 @@
 
 <script>
 	import { ref, computed } from "vue";
+	import router from "./router/router.js";
 
 	export default {
 		setup() {
 			const _mainClass = "flex-auto text-center name";
-			// router.push(window.location.pathname);
-			const transformId = ref("start");
+			const _hash = window.location.hash.substr(1) ? window.location.hash.substr(1) : 'start'; 
+			const transformId = ref(_hash);
 			const transformClass = computed(
 				() => _mainClass + " title-transform--" + transformId.value
 			);
 			//methods
 			function trigger(trans, route) {
 				transformId.value = trans;
-				// router.push(route);
+				router.push(route);
 			}
+			//
+			
+			router.afterEach((to, from) => {
+				//   console.info(from);
+				console.info(to);
+				const _getName = to.name ? to.name : 'start';
+				transformId.value = "" + _getName;
+			});
 			//
 			return { transformId, transformClass, trigger };
 		},
