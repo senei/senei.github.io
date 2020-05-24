@@ -20,7 +20,9 @@
 	export default {
 		setup() {
 			const _mainClass = "flex-auto text-center name";
-			const _hash = window.location.hash.substr(1) ? window.location.hash.substr(1) : 'start'; 
+			const _hash = window.location.hash.substr(1)
+				? window.location.hash.substr(1)
+				: "start";
 			const transformId = ref(_hash);
 			const transformClass = computed(
 				() => _mainClass + " title-transform--" + transformId.value
@@ -31,11 +33,11 @@
 				router.push(route);
 			}
 			//
-			
+
 			router.afterEach((to, from) => {
 				//   console.info(from);
 				console.info(to);
-				const _getName = to.name ? to.name : 'start';
+				const _getName = to.name ? to.name : "start";
 				transformId.value = "" + _getName;
 			});
 			//
@@ -44,7 +46,7 @@
 	};
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 	.name {
 		position: relative;
 		margin: 1rem;
@@ -89,7 +91,7 @@
 		}
 	}
 
-	.logo {
+	.name {
 		.s,
 		.e1,
 		.n,
@@ -106,19 +108,26 @@
 		}
 
 		@media (max-width: 540px) {
+			.s,
+			.e1,
+			.n,
+			.e2,
+			.i {
+				top: 64px;
+			}
 			.i {
 				width: 40px;
 			}
-			small {
+			&>small {
 				position: absolute;
 				top: 100%;
 				left: 100%;
 				transform: translate(-100%, -100%);
-			}
+				}
 		}
 
-		@media (max-width: 360px) {
-			min-height: 270px;
+		@media (max-width: 420px) {
+			max-height: 270px;
 			small {
 				transform: translate(100%, 100%);
 			}
