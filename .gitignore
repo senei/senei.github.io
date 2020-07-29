@@ -1,4 +1,4 @@
-node_modules
-dist
-*.lock
 .DS_Store
+.zero
+zero-builds
+node_modules

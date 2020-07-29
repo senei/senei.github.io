@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>senei web - svg morphing</title>
+		<!-- tailwind -->
+		<link
+			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class=" m-4  ">
+		<div class="border ml-auto mr-auto">
+			<style>
+				.border {
+					width: 400px;
+					height: 288px;
+				}
+				svg {
+					/* height: 100%;
+                width: 100%; */
+					/* background-image: url("https://images.pexels.com/photos/751373/pexels-photo-751373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+                background-size: auto 100%;
+                background-repeat: no-repeat; */
+				}
+				svg image {
+					-webkit-clip-path: url(#svgPath);
+					clip-path: url(#svgPath);
+				}
+				.svgPath__s {
+					transform: translate(108px, 37px) scale(3);
+					width: 90px;
+					height: 105px;
+				}
+
+				.svgPath__s.m-105 {
+					transform: translate(103px, 32px) scale(3);
+				
+					}
+				.svgPath__e {
+					transform: translate(202px, 37px) scale(3);
+				}
+
+				.svgPath__e.m-025 {
+					transform: translate(207px, 32px) scale(3);
+				}
+				.svgPath__n {
+					transform: translate(108px, 146px) scale(3);
+					
+				}
+
+				.svgPath__n.m-075 {
+					transform:translate(102px, 151px) scale(3);
+				}
+				.svgPath__ei {
+					transform: translate(202px, 146px) scale(3);
+				
+				}
+
+				.svgPath__ei.m-045 {
+					transform: translate(207px, 151px) scale(3);
+				
+				}
+			</style>
+			<svg data-viewBox="0 0 400 288" width="400" height="288">
+				<image
+					preserveAspectRatio="xMidYMid slice"
+					xlink:href="https://images.pexels.com/photos/1545505/pexels-photo-1545505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=420&w=288"
+					x="0"
+					y="0"
+					width="400"
+					height="288"
+				></image>
+				<path
+					fill="transparent" fill-rule="nonzero" stroke="orange" 
+					d="M26 36l5-5V19l-5-5H15.5v-1H31V6l-5-5H6L1 6v12l5 5h10.5v1H1v7l5 5z"
+					class="svgPath__s m-105"
+				/>
+				<path
+					fill="transparent"
+					class="svgPath__e  m-025"
+					fill-rule="nonzero" stroke="transparent"
+					d="M26 1l5 5v12l-5 5H15.5v1H31v7l-5 5H6l-5-5V6l5-5h20zm-9.25 11.75h-1.5v1.5h1.5v-1.5z"
+				/>
+
+				<path
+					fill="transparent"
+					class="svgPath__n  m-075"
+					fill-rule="nonzero" stroke="transparent"
+				
+					d="M15.5 36V13h1v23H31V6l-5-5H1v35z"
+				/>
+
+				<path
+					fill="transparent"
+					class="svgPath__ei  m-045"
+					fill-rule="nonzero" stroke="transparent"
+					d="M26 1l5 5v12l-5 5H15.5v1H31v7l-5 5H6l-5-5V6l5-5h20zm20.78 5v30h-14.5V6h14.5zm-30.03 6.75h-1.5v1.5h1.5v-1.5z"
+				/>
+
+				<defs>
+					<clipPath id="svgPath">
+						<path
+							fill="#000"
+							class="svgPath__s"
+							fill-rule="nonzero"
+							d="M26 36l5-5V19l-5-5H15.5v-1H31V6l-5-5H6L1 6v12l5 5h10.5v1H1v7l5 5z"
+						/>
+						<path
+							fill="#000"
+							class="svgPath__e"
+							fill-rule="nonzero"
+							d="M26 1l5 5v12l-5 5H15.5v1H31v7l-5 5H6l-5-5V6l5-5h20zm-9.25 11.75h-1.5v1.5h1.5v-1.5z"
+						/>
+
+						<path
+							fill="#000"
+							class="svgPath__n"
+							fill-rule="nonzero"
+							d="M15.5 36V13h1v23H31V6l-5-5H1v35z"
+						/>
+
+						<path
+							fill="#000"
+							class="svgPath__ei"
+							fill-rule="nonzero"
+							d="M26 1l5 5v12l-5 5H15.5v1H31v7l-5 5H6l-5-5V6l5-5h20zm20.78 5v30h-14.5V6h14.5zm-30.03 6.75h-1.5v1.5h1.5v-1.5z"
+						/>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+	</body>
+</html>
